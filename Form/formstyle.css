@@ -1,0 +1,15 @@
+/* this is extra style */
+
+div {
+  background-color: rgb(215, 153, 215);
+  justify-content: center;
+  border: 10px solid brown;
+  display: inline-block;
+  margin-top: 100px;
+}
+
+div,
+label {
+  background-color: rgb(130, 124, 124);
+  display: flex;
+}

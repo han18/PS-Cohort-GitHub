@@ -1,0 +1,17 @@
+/*this style is for the new registration page */
+
+body {
+  background-color: bisque;
+}
+
+#container {
+  width: 400px;
+  background-color: rgb(175, 175, 190);
+  border: 10px solid pink;
+  display: flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* try to parent the container alone the child the labels or the input depending on the content */

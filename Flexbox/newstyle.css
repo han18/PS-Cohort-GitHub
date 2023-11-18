@@ -1,0 +1,17 @@
+body {
+  background-color: bisque;
+}
+
+.flex-parent {
+  display: flex;
+}
+
+.flex-child {
+  border: 5px solid black;
+  flex-wrap: wrap;
+}
+
+.img-container img {
+  max-width: 100%;
+  height: auto;
+}

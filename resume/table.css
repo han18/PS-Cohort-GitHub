@@ -1,0 +1,27 @@
+table {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  border: 5px double green;
+  margin: 20px;
+  color: saddlebrown;
+}
+
+td {
+  border: 2px dotted red;
+}
+
+td:hover {
+  background-color: lightcoral;
+  color: white;
+}
+
+.end-table {
+  width: 50px;
+  height: 50px;
+}
+
+th {
+  color: springgreen;
+  text-align: right;
+}

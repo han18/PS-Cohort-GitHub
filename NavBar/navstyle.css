@@ -1,0 +1,40 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(241, 240, 240);
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px #888888;
+}
+
+li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(17, 14, 14);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(107, 44, 44);
+}
+
+.active {
+  background-color: #85b190;
+}
+
+.login-user {
+  height: 1em;
+  margin-right: 0.5em;
+  vertical-align: bottom;
+}

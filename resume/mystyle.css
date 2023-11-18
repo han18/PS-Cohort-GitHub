@@ -1,0 +1,43 @@
+/* this is a style sheet */
+
+body {
+  background-color: gray;
+  color: black;
+  font-size: 1.1em;
+}
+
+h1 {
+  color: coral;
+}
+h1::before {
+  content: "A Brave Dog's ";
+}
+
+#intro {
+  font-size: 1.3em;
+}
+
+.colorful {
+  color: orange;
+}
+
+section {
+  border: 5px solid black;
+  padding: 10px;
+  background-color: #dbfffe;
+}
+
+li:first-child {
+  color: rgb(132, 0, 255);
+}
+
+li:nth-child(2),
+:nth-child(4) {
+  color: chartreuse;
+}
+
+/*
+li:last-child {
+      color: fuchsia;
+    }
+*/

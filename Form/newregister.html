@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="newstyle.css" />
+    <title>New Registration Page</title>
+  </head>
+  <body>
+    <div id="container">
+      <form>
+        <label for="name">
+          First Name*
+          <input type="text" name="firstname" id="firstname" required />
+        </label>
+        <br />
+        <label for="lastname">
+          Last Name*
+          <input type="text" name="lasttname" id="lastname" required />
+        </label>
+        <br />
+        <label for="username">
+          Username*
+          <input type="text" name="username" id="username" required />
+        </label>
+        <br />
+        <label for="email">
+          Email Address*
+          <input type="email" name="email" id="email" required />
+        </label>
+        <br />
+        <label for="password">
+          Password*
+          <input type="password" name="password" id="password" required />
+        </label>
+        <br />
+        <label for="state"
+          >State
+          <select name="state">
+            <option>Select</option>
+            <option value="new york">New York</option>
+            <option value="florida">Florida</option>
+            <option value="california">California</option>
+            <option value="massachusetts">Massachusetts</option>
+          </select>
+        </label>
+        <br />
+        <label for="submit">
+          Submit
+          <input type="submit" name="submit" id="submit" required />
+        </label>
+      </form>
+    </div>
+  </body>
+</html>
