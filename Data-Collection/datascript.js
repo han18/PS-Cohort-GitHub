@@ -1,11 +1,12 @@
 // Data Collections
-
+// created a repository for
 let movies = ["Case 39", "Beauty & The Beast", "Toys Story"];
 console.log(movies);
 console.log(movies[2]);
 console.log(movies.length);
 
 movies[1] = "Batman";
+console.log(movies);
 
 movies[10] = "Cats";
 console.log(movies);
