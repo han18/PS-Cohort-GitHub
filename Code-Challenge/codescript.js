@@ -11,6 +11,7 @@ for (let x = 0; x <= 10; x++) {
 
 // Print a table containing multiplication tables
 
-for (m = 1; m <= 10; m*= ) {
-
+const tabM = 10;
+for (let m = 1; m <= tabM; m++) {
+  for (let r = 1; r <= tabM; r++) console.log(m * r);
 }
