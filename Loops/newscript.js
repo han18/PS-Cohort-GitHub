@@ -34,3 +34,31 @@ for (let n = 5; n <= 50; n++) {
 }
 
 // Extra info: So first loop just goes over all our numbers (5-10), next we create a second for loop to then do some math, to see if our number is divisible. Its tricky because our i variable is dependent on our n variable
+
+// statement iterates through a set of enumerable properties of an object using a specified variable. For each distinct property, JavaScript executes the statements defined within the loop.
+
+const str = "Hello World";
+
+for (const i in str) {
+  console.log(str[i]);
+}
+
+const cat = "Hello World";
+
+for (const c of cat) {
+  console.log(c);
+}
+
+let x = 30;
+
+while (x > 0) {
+  x /= 2;
+  console.log("pass");
+  x--;
+
+  if (x % 1 != 0) {
+    break;
+  }
+
+  console.log(x);
+}
