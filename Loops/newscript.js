@@ -15,6 +15,8 @@ for (let t = 0; t <= 100; t++) {
   }
 }
 
+// ===============================================
+console.log("===============================================");
 // Part 2: Prime Time
 
 for (let n = 5; n <= 50; n++) {
@@ -37,9 +39,45 @@ for (let n = 5; n <= 50; n++) {
 
 // statement iterates through a set of enumerable properties of an object using a specified variable. For each distinct property, JavaScript executes the statements defined within the loop.
 
+// ==============================================
+console.log("===============================================");
 // Part 3: Feeling Loopy
+
+let stringCVS =
+  "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
+
+console.log(stringCVS);
+
+for (const cvs in stringCVS) {
+  if (stringCVS[cvs] === ",") {
+    continue;
+  }
+  console.log(stringCVS[cvs]);
+}
+
+for (const cvs1 of stringCVS) {
+  if (stringCVS[cvs1] === "\r" && stringCVS[cvs1] === "\n") {
+    continue;
+  }
+  console.log(cvs1[stringCVS]);
+}
 
 let cvsString =
   "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-console.log(cvsString);
+// Using a for of loop first method
+for (let char of cvsString) {
+  console.log(char);
+}
+// ========= new way of doing the exercise =======
+// Split the CSV string into rows
+const splitRow = cvsString.split("\n");
+
+// Loop through each row
+for (let i = 0; i < splitRow.length; i++) {
+  // Split the row into cells
+  const cells = splitRow[i].split(",");
+
+  // Log each row of data
+  console.log(cells[0], cells[1], cells[2], cells[3]);
+}
