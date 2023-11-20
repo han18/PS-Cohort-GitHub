@@ -70,7 +70,7 @@ for (let char of cvsString) {
   console.log(char);
 }
 // ========= new way of doing the exercise =======
-// Split the CSV string into rows
+// Split the cvs string into rows
 const splitRow = cvsString.split("\n");
 
 // Loop through each row
