@@ -21,3 +21,8 @@ console.log(movies);
 
 movies.pop("Baby Laugh"); // move element
 console.log(movies);
+
+let myMovies = ["Joker", "Home ALone"];
+let myMoviePlus = movies.concat(myMovies);
+
+console.log(myMoviePlus);

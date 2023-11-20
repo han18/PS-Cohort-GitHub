@@ -15,3 +15,11 @@ const tabM = 10;
 for (let m = 1; m <= tabM; m++) {
   for (let r = 1; r <= tabM; r++) console.log(m * r);
 }
+
+// Calculate the sum of numbers within an array
+
+const sum = [1, 2, 3, 4, 6, 8, 9]; //33
+
+for (let s = 1; s < sum.length; s++) {
+  console.log(sum + s);
+}

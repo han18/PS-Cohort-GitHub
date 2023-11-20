@@ -37,28 +37,9 @@ for (let n = 5; n <= 50; n++) {
 
 // statement iterates through a set of enumerable properties of an object using a specified variable. For each distinct property, JavaScript executes the statements defined within the loop.
 
-const str = "Hello World";
+// Part 3: Feeling Loopy
 
-for (const i in str) {
-  console.log(str[i]);
-}
+let cvsString =
+  "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-const cat = "Hello World";
-
-for (const c of cat) {
-  console.log(c);
-}
-
-let x = 30;
-
-while (x > 0) {
-  x /= 2;
-  console.log("pass");
-  x--;
-
-  if (x % 1 != 0) {
-    break;
-  }
-
-  console.log(x);
-}
+console.log(cvsString);

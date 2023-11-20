@@ -49,14 +49,14 @@ for (let x = 0; x <= 10; x++) {
 
 // continue keyword
 
-const str = "Hello World";
+const str1 = "Hello World";
 
-for (let i = 0; i < str.length; i++) {
-  if (str[i] == "l") {
+for (let i = 0; i < str1.length; i++) {
+  if (str1[i] == "l") {
     continue;
   }
 
-  console.log(str[i]);
+  console.log(str1[i]);
 }
 
 // Exercise
@@ -73,11 +73,11 @@ while (count > 0) {
 // Log integers in multiples of 3 as long as they are less than 35
 //check the screenshot
 
-let x = 0;
+let p = 0;
 
-while (x >= 35) {
-  console.log(`this is multiples of ${x}`);
-  x *= 3;
+while (p >= 35) {
+  console.log(`this is multiples of ${p}`);
+  p *= 3;
 }
 
 // Print integers in multiples of 5 as long as they are less than 100.
@@ -90,3 +90,29 @@ while (x >= 35) {
 //   }
 //   z++;
 // }
+
+const str = "Hello World";
+
+for (const i in str) {
+  console.log(str[i]);
+}
+
+const cat = "Hello World";
+
+for (const c of cat) {
+  console.log(c);
+}
+
+let x = 30;
+
+while (x > 0) {
+  x /= 2;
+  console.log("pass");
+  x--;
+
+  if (x % 1 != 0) {
+    break;
+  }
+
+  console.log(x);
+}
