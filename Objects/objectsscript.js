@@ -38,5 +38,3 @@ console.log(myCar);
 for (let key in myCar) {
   console.log(myCar[key]);
 }
-
-// const myList = [["Chips", 20] ["Candy", 10 ] ["Bread", 5] ["Chocolate", 4] ["Cake", 2] ["Dressing", 3]];

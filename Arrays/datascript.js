@@ -26,3 +26,9 @@ let myMovies = ["Joker", "Home ALone"];
 let myMoviePlus = movies.concat(myMovies);
 
 console.log(myMoviePlus);
+
+const myHome = ["dishwasher", "oven", "microwave"];
+
+for (let myCase = 0; myCase < myHome.length; myCase++) {
+  console.log(`I will have:  ${myHome[myCase]} `);
+}
