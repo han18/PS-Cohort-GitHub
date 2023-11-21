@@ -68,22 +68,23 @@ function size(width, height) {
 
 size(3, 6);
 
-// Arguments Array like
-function getDevObject(name) {
-  //   console.log(name);
-  //   console.log(arguments[3]);
-  const skills = [];
-  for (let i = 0; i < arguments; i++) {
-    // adding one by one by looping each argument
-    skills.push(arguments[i]);
-  }
-  return {
-    devName: name,
-    jobSkills: skills, // catch the arguments in here
-  };
-}
+// Arguments Array like +==================
+// function getDevObject(name) {
+//   //   console.log(name);
+//   //   console.log(arguments[3]);
+//   const skills = [];
+//   for (let i = 0; i < arguments; i++) {
+//     // adding one by one by looping each argument
+//     skills.push(arguments[i]);
+//   }
+//   return {
+//     devName: name,
+//     jobSkills: skills, // catch the arguments in here
+//   };
+// }
 
-// can call mulit
-const getObject = getDevObject("Maria", "Html", "js");
+// // can call mulit
+// const getObject = getDevObject("Maria", "Html", "js");
 
-console.log(getObject);
+// console.log(getObject);
+//========================
