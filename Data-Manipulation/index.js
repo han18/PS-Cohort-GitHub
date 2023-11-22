@@ -100,11 +100,3 @@ let milesPerHour = miles / 60;
 console.log(milesPerHour); // 25 hours
 
 // __________________________________________________
-
-// ================= Part 3: Future Exploration ===============
-
-let nameOne = "Hanan";
-
-for (let h = 0; h < nameOne.length; h++) {
-  console.log("this is " + nameOne[h]);
-}
