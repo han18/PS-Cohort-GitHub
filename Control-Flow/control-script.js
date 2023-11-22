@@ -36,13 +36,50 @@
 //     break;
 // }
 
-// ================= Part 1: Growing Pains ==============
+// ================= Part 1: Growing Pains second try ==============
 
+// const radius = 5;
+// const PI = 3.1415;
+// const area = PI * radius * radius;
+
+// console.log(area);
+
+// const plant = 0.8;
+// const plantGrowth = 20;
+// const week = 9;
+
+// for (let x = 0; x < week.length; week++) {
+//   plantGrowth *= 2;
+// }
+
+// if (plant > (0.8 * plantGrowth) / area) {
+//   console.log(" Prune ");
+// } else if (plant > (0.5 * plantGrowth) / area) {
+//   console.log("Monitored");
+// } else {
+//   console.log("Planted");
+// }
+
+//////////////////////////////////
 const radius = 5;
 const PI = 3.1415;
 const area = PI * radius * radius;
-
 console.log(area);
 
-const plant = 0.8;
-const plantGrowth = 20;
+const plantMeters = 0.8;
+const plantStarts = 20;
+const weeks = 0;
+
+const plantGrowth = plantStarts * plantMeters;
+const plantCount = plantGrowth + weeks;
+const plantArea = plantCount * area;
+
+if (plantArea > 0.8) {
+  console.log("Pruned");
+} else if (plantArea >= 0.5 && plantArea <= 0.8) {
+  console.log("Monitored");
+} else if (plantArea < 50) {
+  console.log("Planted");
+}
+
+//=========== Part 2: Thinking Bigger ================
