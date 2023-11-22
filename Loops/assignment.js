@@ -56,7 +56,7 @@ for (let n = 5; n <= 65; n++) {
 let stringCVS =
   "ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26";
 
-console.log(stringCVS);
+console.log(stringCVS); // to check it's original display
 
 // created a ( for of ) loop
 // for (const cvs1 of stringCVS) {
@@ -67,12 +67,12 @@ console.log(stringCVS);
 // }
 // to make a row using String.prototype.split()
 // The split() method of String values takes a pattern and divides this string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
-const splitRow = stringCVS.split("\n");
+const splitCVS = stringCVS.split("\n");
 
-// looping through each row using split method
-for (let i = 0; i < splitRow.length; i++) {
+// looping through each row using split method to create an array
+for (let i = 0; i < splitCVS.length; i++) {
   // splitting the row into cells
-  const cells = splitRow[i].split(","); // removing the comma
+  const cells = splitCVS[i].split(","); // removing the comma
 
   // Log each row of data since now it's considered an array
   console.log(cells[0], cells[1], cells[2], cells[3]);
