@@ -70,10 +70,10 @@ console.log(stringCVS); // to check it's original display
 const splitCVS = stringCVS.split("\n");
 
 // looping through each row using split method to create an array
-for (let i = 0; i < splitCVS.length; i++) {
+for (let cvs = 0; cvs < splitCVS.length; cvs++) {
   // splitting the row into cells
-  const cells = splitCVS[i].split(","); // removing the comma
+  const cells = splitCVS[cvs].split(","); // removing the comma
 
-  // Log each row of data since now it's considered an array
+  // Log each row of data since now it's considered an array reference the index
   console.log(cells[0], cells[1], cells[2], cells[3]);
 }
