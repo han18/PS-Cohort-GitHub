@@ -68,7 +68,7 @@ console.log(area);
 
 const plantMeters = 0.8;
 const plantStarts = 20;
-const weeks = 0;
+const weeks = 4;
 
 const plantGrowth = plantStarts * plantMeters;
 const plantCount = plantGrowth + weeks;
@@ -81,5 +81,3 @@ if (plantArea > 0.8) {
 } else if (plantArea < 50) {
   console.log("Planted");
 }
-
-//=========== Part 2: Thinking Bigger ================
