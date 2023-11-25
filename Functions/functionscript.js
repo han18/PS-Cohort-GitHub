@@ -90,3 +90,36 @@ size(3, 6);
 //========================
 
 console.log("===================================");
+
+function fruits(apples, bananas) {
+  const juice = apples + bananas;
+  console.log(juice);
+
+  return juice;
+}
+
+fruits(5, 2);
+fruits(10, 2);
+
+// calculating taxes
+function calTaxes(tax) {
+  const taxPrice = tax * 0.08 + tax;
+  return taxPrice;
+}
+
+console.log(calTaxes(115));
+
+// creating a juice processor
+
+const multiFruit = function (juice) {
+  return juice * 2;
+};
+
+const calFruits = function (apples, oranges) {
+  const appleFruits = multiFruit(apples);
+  const orangeFruits = multiFruit(oranges);
+
+  return `I have ${appleFruits} apples and ${orangeFruits} oranges`; // I could have stored this into a variable and returned the variable. either wat it works
+};
+
+console.log(calFruits(2, 4));
