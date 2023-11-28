@@ -123,3 +123,38 @@ const calFruits = function (apples, oranges) {
 };
 
 console.log(calFruits(2, 4));
+console.log(calFruits(10, 6));
+
+/// flowing class lesson
+
+// default parameter
+function setColor(bike, color = "black") {
+  // you can pass multi selection of defaults
+  bike.color = color; // the color is set to black if user does'nt chose a color
+}
+
+const b1 = {}; // to pass in the value to the object
+
+setColor(b1, "red"); // the color passed in here if color is selected
+console.log(b1);
+
+// function as arguments means they are wrapped in objects to preform
+
+console.log();
+
+// IIFE runs a function once the page loads
+(function () {
+  /// code here
+})(); // this parentheses to invoke the function
+
+// pass by
+
+let myVar = 20;
+
+function passBy(myVar) {
+  myVar = myVar * 10;
+  return myVar;
+}
+console.log(myVar); // 20
+console.log(passBy(myVar)); // 200
+console.log(myVar);
