@@ -12,7 +12,7 @@ paragraph.textContent = "This is a guessing game";
 let guessNumber = Number(prompt("choose a number from 1 to 20"));
 
 // creating a random number to be guessed
-let secretNumber = Math.trunc(Math.random() * 10);
+let secretNumber = Math.trunc(Math.random() * 4);
 
 // checking the condition of the number prompt input
 if (guessNumber === secretNumber) {
@@ -21,4 +21,6 @@ if (guessNumber === secretNumber) {
   ).textContent = `YAY! You got it! The secret number is ${secretNumber}`;
 } else if (guessNumber !== secretNumber) {
   console.log((document.querySelector(".message").textContent = `Try again`));
+} else {
+  alert("Do it all over again");
 }
