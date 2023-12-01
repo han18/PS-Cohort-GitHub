@@ -1,6 +1,18 @@
 // Create your game here!
 
-let theAlert = window.alert("Hey there! Lets play a game :)");
-let thePrompt = window.prompt("choose a number for 1 to 15");
+const appBody = document.getElementById("app");
+const guessMe = document.getElementById("guessbox");
 
-let guessNumber = 15;
+const paragraph = app.appendChild(document.createElement("p"));
+
+paragraph.textContent = "This is a guessing game";
+
+let guessNumber = Number(prompt("choose a number from 1 to 20"));
+
+let secretNumber = Math.trunc(Math.random() * 10);
+
+if (guessNumber === secretNumber) {
+  document.querySelector(".message").textContent = "YOU GOT IT";
+} else if (guessNumber !== secretNumber) {
+  console.log((document.querySelector(".message").textContent = "TRY AGAIN"));
+}
