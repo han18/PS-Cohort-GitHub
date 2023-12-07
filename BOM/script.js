@@ -9,10 +9,10 @@ const paragraph = app.appendChild(document.createElement("p"));
 paragraph.textContent = "This is a guessing game";
 
 // guessing a number through a prompt
-let guessNumber = Number(prompt("choose a number from 1 to 20"));
+let guessNumber = Number(prompt("choose a number from 1 to 10"));
 
 // creating a random number to be guessed
-let secretNumber = Math.trunc(Math.random() * 4);
+let secretNumber = Math.trunc(Math.random() * 10) + 1;
 
 // checking the condition of the number prompt input
 if (guessNumber === secretNumber) {
