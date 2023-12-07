@@ -16,17 +16,18 @@ class Contacts {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
+  // this is the new values we need to push to the constructor class
   const newContacts = new Contacts(nameInput.value, emailInput.value);
   console.log(newContacts);
 
   // push a new value
   contacts.push(newContacts);
   console.log(newContacts);
-
+  // this is displaying the values stored in the webpage
   displayContact();
 });
 
-//we want to loop over contact
+//we want to loop over contact to display to the page
 function displayContact() {
   contacts.forEach((contacts) => {
     const div = document.createElement("div");
