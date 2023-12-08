@@ -62,3 +62,5 @@ console.log(firstHuman);
 
 const secondHuman = new myHuman("green", 3, "male", "Teacher", 29);
 console.log(secondHuman);
+
+console.log(firstHuman.gender);
