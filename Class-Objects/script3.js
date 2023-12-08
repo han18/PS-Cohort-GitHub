@@ -31,7 +31,7 @@ class Animal {
   }
 }
 
-// tryin to extend the animal offical  class
+// trying to extend a new class Cat from the official Animal class parent
 class Cat extends Animal {
   constructor(fur, isAwake, isMoving) {
     super(2, 4, isAwake, isMoving);
@@ -39,6 +39,26 @@ class Cat extends Animal {
 }
 
 const cat1 = new Cat("orange", true, false);
+console.log(cat1);
 
 class Dog extends Animal {}
 class Cow extends Animal {}
+
+// extending a new constructor for a human class
+
+class myHuman extends Animal {
+  constructor(eyes, legs, gender, occupation, age) {
+    //     super("blue", 2, null, null);
+    super(eyes, legs, null, null);
+
+    this.gender = gender;
+    this.occupation = occupation;
+    this.age = age;
+  }
+}
+
+const firstHuman = new myHuman("blue", 2, "female", "Doctor", 49);
+console.log(firstHuman);
+
+const secondHuman = new myHuman("green", 3, "male", "Teacher", 29);
+console.log(secondHuman);
