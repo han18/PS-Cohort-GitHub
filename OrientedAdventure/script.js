@@ -48,10 +48,10 @@ robin.companion.companion.inventory = ["small hat", "sunglasses"];
 console.log(robin);
 
 class Adventurer extends Character {
-  constructor(name, role) {
-    super(name);
+  constructor(name, type, role) {
+    super(name, type);
     // Adventurers have specialized roles.
-    this.role = role;
+    this.role = "Fighter";
     // Every adventurer starts with a bed and 50 gold coins.
     this.inventory.push("bedroll", "50 gold coins");
   }
@@ -61,13 +61,13 @@ class Adventurer extends Character {
     super.roll();
   }
 
-  static ROLES(fighter, healer, wizard) {
-    this.fighter = fighter;
-    this.healer = healer;
-    this.wizard = wizard;
+  static roles(roles) {
+    roles = ["Fighter", "Healer", "Wizard"];
   }
 }
 
+const advRolls = new Adventurer("Kalvin", "Dog");
+console.log(advRolls);
 // logging the random roll
 adventurer.roll();
 // logging the full object
