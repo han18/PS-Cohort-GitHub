@@ -27,13 +27,19 @@ class Character {
     this.type = type;
     this.health = 100;
     this.inventory = [];
-    this.roll = roll(mod = 0) {
-      const result = Math.floor(Math.random() * 20) + 1 + mod;
-      console.log(`${this.name} rolled a ${result}.`);
-    }
   }
 }
 
+// recreating the robin adventure object as an instance of the parent Character Class object
+const robin = new Character("Robin");
+robin.inventory = ["sword", "potion", "artifact"];
+robin.companion = new Character("Leo");
+robin.companion.type = "Cat";
+robin.companion.companion = new Character("Frank");
+robin.companion.companion.type = "Flea";
+robin.companion.companion.inventory = ["small hat", "sunglasses"];
+
+console.log(robin);
 // logging the random roll
 adventurer.roll();
 // logging the full object
