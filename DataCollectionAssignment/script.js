@@ -1,4 +1,4 @@
-console.log("hey there world");
+console.log("hey world");
 
 function arrayFormat(array) {
   const addArray = array.push([]);
@@ -10,11 +10,14 @@ let stringCVS =
 
 // using the split method to split the string
 let splitCVS = stringCVS.split("\n");
+splitCVS.map((splitCVS) => splitCVS.toLowerCase);
 
 for (let cvs = 0; cvs < splitCVS.length; cvs++) {
   // splitting the row into cells
   let cells = splitCVS[cvs].split(","); // removing the comma
   //   converting the string into an array
+
+  // changing the
   // Log each row of data since now it's considered an array reference the index
   console.log(cells[0], cells[1], cells[2], cells[3]);
 }
