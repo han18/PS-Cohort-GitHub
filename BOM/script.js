@@ -4,15 +4,16 @@ const appBody = document.getElementById("app");
 
 // appending a p element to the app div
 const paragraph = app.appendChild(document.createElement("p"));
+paragraph.style.color = "blue";
 
 // displaying a message text
 paragraph.textContent = "This is a guessing game";
 
 // guessing a number through a prompt
-let guessNumber = Number(prompt("choose a number from 1 to 10"));
+let guessNumber = Number(prompt("choose a number from 1 to 5"));
 
 // creating a random number to be guessed
-let secretNumber = Math.trunc(Math.random() * 10) + 1;
+let secretNumber = Math.trunc(Math.random() * 5) + 1;
 
 // checking the condition of the number prompt input
 if (guessNumber === secretNumber) {
